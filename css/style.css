@@ -8,6 +8,9 @@
 }
 
 .btn{background-color: #7c00fe;
-color: #ededed;}
+color: #ededed  ;}
 .btn:hover{background-color: #f9e400;
 color:var(--cor-preta);}
+.bg-laranja{
+  background-color: var(--cor-laranja);
+}
