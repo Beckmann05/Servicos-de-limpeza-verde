@@ -6,3 +6,8 @@
   --cor-branca: #ededed;
   --cor-preta: #161616;
 }
+
+.btn{background-color: #7c00fe;
+color: #ededed;}
+.btn:hover{background-color: #f9e400;
+color:var(--cor-preta);}
