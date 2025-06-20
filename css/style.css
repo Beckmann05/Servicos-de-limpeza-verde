@@ -67,7 +67,12 @@
 
 
 
-
+/* FOOTER */
+.centro{
+    display: flex;
+    align-items: center;
+}
+/* FIM FOOTER */
 
 /* FIM INDEX */
 

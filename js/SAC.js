@@ -19,46 +19,22 @@ let lista_form_contrato= [
         type:'Text',
     },
     {
-        label:'Tipo de serviço:',
+        label:'Assunto:',
         col: 6,
         for:'serviço',
         type:'select',
     },
     {
-        label:'CEP:',
+        label:'Explique a situação:',
         col: 6,
-        for:'cep',
-        type:'Text',
-    },
-    {
-        label:'Endereço:',
-        col: 6,
-        for:'endereço',
-        type:'Text',
-    },
-    {
-        label:'Bairro:',
-        col: 6,
-        for:'bairro',
-        type:'Text',
-    },
-    {
-        label:'Número:',
-        col: 3,
-        for:'numero_casa',
-        type:'Text',
-    },
-    {
-        label:'Complemento:',
-        col: 3,
-        for:'complemento',
-        type:'Text',
+        for:'explicação',
+        type:'Textarea',
     },
 ]
 
 function form_contrato(){
     div_form_contrato.innerHTML += `
-            <h1 class="text-center pt-4">Contrate nossos serviços!</h1>`
+            <h1 class="text-center pt-4">Entre em contato conosco</h1>`
     for(let i=0; i<lista_form_contrato.length; i++){
         if(lista_form_contrato[i].type == 'select'){
             div_form_contrato.innerHTML += `
@@ -67,12 +43,19 @@ function form_contrato(){
                 <br>
                 <select name="" id="" class="form-control">
                     <option value=""></option>
-                    <option value="">Limpeza Domiciliar</option>
-                    <option value="">Limpeza Pós-obra</option>
-                    <option value="">Limpeza Corporativa</option>
-                    <option value="">Sanitização</option>
-                    <option value="">Zeladoria</option>
+                    <option value="">Feedback</option>
+                    <option value="">Resultados insatisfatórios</option>
+                    <option value="">Problemas com pagamento</option>
+                    <option value="">Problemas com Funcionários</option>
                 </select>`
+        }
+        else if(lista_form_contrato[i].type == 'Textarea'){
+            div_form_contrato.innerHTML += `
+            <div class="py-2 px-5">
+                <label for="${lista_form_contrato[i].for}" class="text-center" style="font-size: larger;">${lista_form_contrato[i].label}</label>
+                <br>
+                <textarea class="form-control"></textarea>`
+            
         }
         else{
             div_form_contrato.innerHTML += `

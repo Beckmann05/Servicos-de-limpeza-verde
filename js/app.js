@@ -71,17 +71,17 @@ function footer (){
   <div class = "container-footer">
   <div class = "container">
   <div class = "row">
-  <div class = "col-lg-3 col-md-12 com-sm-12">
+  <div class = "col-lg-3 col-md-12 com-sm-12 centro">
   <div class = "logo logo-telefone"><i class="bi bi-telephone-inbound-fill"></i> (12) 32765-4321</div>
   </div>
 
-  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3">
+  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
   <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
   <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
-  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Instagram</div>
+  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Facebook</div>
   </div>
 
-  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua">
+  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua centro">
   <p>Todos os direitos reservados &copy;EcoClean LTDA<p>
   </div>
   </div>
@@ -89,6 +89,8 @@ function footer (){
   </div>
   `
 }
+footer();
+// FIM FOOTER
 
 // FIM INDEX
 // =======
