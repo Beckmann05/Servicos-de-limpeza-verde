@@ -7,6 +7,7 @@
   --cor-branca: #ededed;
   --cor-preta: #161616;
 }
+/* <<<<<<< HEAD */
 /* ************ */
 
 
@@ -72,3 +73,29 @@
 
 
 
+/* ======= */
+
+.btn{background-color: #7c00fe;
+color: #ededed  ;}
+.btn:hover{background-color: #f9e400;
+color:var(--cor-preta);}
+.bg-laranja{
+  background-color: var(--cor-laranja);
+}
+.border-radius{
+  border-radius: 10px;
+}
+.logo-footer{
+  height: 26px;
+}
+.display-flex{
+  display: flex;
+}
+.flex-center{
+  justify-content: center;
+  gap: 7px;
+}
+.align-center{
+  align-items: center;
+}
+/* >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b */
