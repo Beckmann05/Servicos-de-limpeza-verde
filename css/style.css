@@ -14,3 +14,19 @@ color:var(--cor-preta);}
 .bg-laranja{
   background-color: var(--cor-laranja);
 }
+.border-radius{
+  border-radius: 10px;
+}
+.logo-footer{
+  height: 26px;
+}
+.display-flex{
+  display: flex;
+}
+.flex-center{
+  justify-content: center;
+  gap: 7px;
+}
+.align-center{
+  align-items: center;
+}

@@ -9,16 +9,67 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg bg-laranja">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     
     <main class="container my-5">
-        <div class="row bg-light form" id="form_contrato_id">
+        <div class="row bg-light form border border-radius" id="form_contrato_id">
         </div>
+
     </main>
 
 
-    <footer class="bg-laranja footer">
+    <footer class="bg-laranja footer p-3">
         <div class="container">
-        <h6>(12) 98765-4321</h6></div>
+            <div class="row">
+                <div class="display-flex col-md-3">
+                    <figure class="my-auto"><img src="../img/telefone.png" alt=""  class="logo-footer"></figure>
+                    <h6 class="my-auto">(12) 98765-4321</h6>
+                </div>
+                <div class="col-md-6 display-flex flex-center">
+                    <figure class="my-auto"><img src="../img/facebook.png" alt="" class="logo-footer"></figure>
+                    <figure class="my-auto"><img src="../img/instagram.png" alt="" class="logo-footer"></figure>
+                    <figure class="my-auto"><img src="../img/youtube.png" alt="" class="logo-footer"></figure>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="my-auto h-100 text-center" style="font-size:x-small;"> Todos os direitos reservados &copy; EcoClean Ltda.</h4>
+                </div>
+            </div>       
+        </div>
 
     </footer>
 
