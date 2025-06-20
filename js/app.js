@@ -1,13 +1,18 @@
 // <<<<<<< HEAD
 // INÍCIO INDEX
 
+// IMPRIMIR NO SITE
 function print(){
     header()
     section1()
+    footer()
 }
 
 print();
+//**************** */
 
+
+// HEADER
 function header (){
     let headerBanner = document.getElementById('headerBanner');
     for(let i = 0; i < 1; i++){
@@ -24,7 +29,7 @@ function header (){
   <div class="card-body card-orange">
     <h5 class="card-title">${catalogoFilmesSeries[8].titulo}</h5>
     <p class="card-text">${catalogoFilmesSeries[8].sinopse}</p>
-    <a href="#conteudo-2-section" class="btn btn-roxo">Conferir diferenciais</a>
+    <a href="pages/contrato.html" class="btn btn-roxo">Contratar nossos serviços</a>
   </div>
   <div class="card-footer card-yellow"">
     ${catalogoFilmesSeries[8].anoLancamento}
@@ -34,7 +39,10 @@ function header (){
         `
     }
 }
+// FIM HEADER
 
+
+// SECTION-1
 function section1 (){
     let conteudoSection1 = document.getElementById("conteudo-1-section");
     conteudoSection1.innerHTML = "";
@@ -53,6 +61,33 @@ function section1 (){
          </div>
          </div> `
     }
+}
+// FIM SECTION-1
+
+// FOOTER
+function footer (){
+  let footerContainer = document.getElementById('footer');
+  footerContainer.innerHTML = `
+  <div class = "container-footer">
+  <div class = "container">
+  <div class = "row">
+  <div class = "col-lg-3 col-md-12 com-sm-12">
+  <div class = "logo logo-telefone"><i class="bi bi-telephone-inbound-fill"></i> (12) 32765-4321</div>
+  </div>
+
+  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3">
+  <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
+  <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
+  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Instagram</div>
+  </div>
+
+  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua">
+  <p>Todos os direitos reservados &copy;EcoClean LTDA<p>
+  </div>
+  </div>
+  </div>
+  </div>
+  `
 }
 
 // FIM INDEX

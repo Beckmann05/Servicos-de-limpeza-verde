@@ -89,4 +89,57 @@ function form_contrato(){
 }
 
 form_contrato()
+
+
+// FOOTER
+function footer (){
+  let footerContainer = document.getElementById('footer');
+  footerContainer.innerHTML = `
+  <div class = "container-footer">
+  <div class = "container">
+  <div class = "row">
+  <div class = "col-lg-3 col-md-12 com-sm-12">
+  <div class = "logo logo-telefone"><i class="bi bi-telephone-inbound-fill"></i> (12) 32765-4321</div>
+  </div>
+
+  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex">
+  <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
+  <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
+  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Instagram</div>
+  </div>
+
+  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua">
+  <p>Todos os direitos reservados &copy;EcoClean LTDA<p>
+  </div>
+  </div>
+  </div>
+  </div>
+  `
+}// FOOTER
+function footer (){
+  let footerContainer = document.getElementById('footer');
+  footerContainer.innerHTML = `
+  <div class = "container-footer">
+  <div class = "container">
+  <div class = "row">
+  <div class = "col-lg-3 col-md-12 com-sm-12">
+  <div class = "logo logo-telefone"><i class="bi bi-telephone-inbound-fill"></i> (12) 32765-4321</div>
+  </div>
+
+  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3">
+  <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
+  <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
+  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Instagram</div>
+  </div>
+
+  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua">
+  <p>Todos os direitos reservados &copy;EcoClean LTDA<p>
+  </div>
+  </div>
+  </div>
+  </div>
+  `
+}
+
+footer();
 // >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b
