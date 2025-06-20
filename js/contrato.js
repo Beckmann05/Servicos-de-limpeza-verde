@@ -62,7 +62,7 @@ function form_contrato(){
     for(let i=0; i<lista_form_contrato.length; i++){
         if(lista_form_contrato[i].type == 'select'){
             div_form_contrato.innerHTML += `
-            <div class="col-md-${lista_form_contrato[i].col} col-sm-12 py-2 px-5">
+            <div class="col-lg-${lista_form_contrato[i].col} col-sm-12 py-2 px-5">
                 <label for="${lista_form_contrato[i].for}" class="" style="font-size: larger;">${lista_form_contrato[i].label}</label>
                 <br>
                 <select name="" id="" class="form-control">
@@ -76,7 +76,7 @@ function form_contrato(){
         }
         else{
             div_form_contrato.innerHTML += `
-            <div class="col-md-${lista_form_contrato[i].col} col-sm-${2*lista_form_contrato[i].col} py-2 px-5">
+            <div class="col-lg-${lista_form_contrato[i].col} col-sm-${2*lista_form_contrato[i].col} py-2 px-5">
                 <label for="${lista_form_contrato[i].for}" class="" style="font-size: larger;">${lista_form_contrato[i].label}</label>
                 <br>
                 <input type=" ${lista_form_contrato[i].type}" class="form-control">`
