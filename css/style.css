@@ -12,6 +12,62 @@
 
 /* INDEX */
 
+/* NAVBAR */
+.btn-roxo{
+    background-color: #7c00fe;
+    color: #ededed;
+}
+
+.btn-roxo:hover{
+    background-color: #f9e400;
+    color: #161616;
+    border: 1px solid #7c00fe;
+}
+
+.navbar{
+    background-color: #ededed;
+}
+
+.navbar li{
+    font-weight: 600;
+}
+/* FIM NAVBAR */
+
+
+/* HEADER */
+.bg-roxo{
+    background-color: #7c00fe;
+}
+
+#headerBanner{
+    overflow: hidden;
+}
+
+.card-orange{
+    background-color: #ffaf00;
+}
+
+.card-yellow{
+    background-color: #f9e400;
+}
+
+/* FIM HEADER */
+
+
+/* CARROSSEL */
+.bg-white-carrossel{
+    background-color: #ededed8e;
+}
+
+.bg-white-carrossel p{
+    font-weight: 600;
+}
+/* FIM CARROSSEL */
+
+
+
+
+
 /* FIM INDEX */
 
 
