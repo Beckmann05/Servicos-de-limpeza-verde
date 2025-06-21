@@ -8,34 +8,36 @@ function sect1_servicos(){
     for(let i=0; i<5;i++){
         if(i%2==0){
             main_servicos.innerHTML+=`
-                <div class="bg-roxo text-white row py-5 my-3 rounded">
-                    <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
-                    <div class="col-lg-10">
-                        <div class="m-2">
-                            <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
-                                <h3 class="">${noticias[i].titulo} <i class="bi bi-bucket"></i></h3>
-                                <h5 class="">${noticias[i].dataPublicacao}</h5>
+                <div class="border border-success bg-roxo text-white row py-5 my-3 rounded">
+                    <figure class="border border-success col-lg-2 text-center"><img src="${noticias[i].imagem}" class="border border-success img-servico m-2" alt=""></figure>
+                    <div class="border border-success col-lg-10">
+                        <div class="border border-success m-2">
+                            <div class="border border-success d-flex align-items-center justify-content-between px-3 border-bottom">
+                                <h3 class="border border-success ">${noticias[i].titulo} <i class="border border-success bi bi-bucket"></i></h3>
+                                <h5 class="border border-success ">${noticias[i].dataPublicacao}</h5>
                             </div>
                             <p>${noticias[i].resumo}</p>
-                            <div class="text-end"><h4>- ${noticias[i].autor}</h4></div>
+                            <div class="border border-success text-end"><h4>- ${noticias[i].autor}</h4></div>
                         </div>
                     </div>
                 </div>`
         }
         else{
             main_servicos.innerHTML+=`
-                <div class="row bg-amarelo py-5 my-3 rounded">
-                    <div class="col-lg-10">
-                        <div class="m-2">
-                            <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
-                                <h5 class="sm-text-center">${noticias[i].dataPublicacao}</h5>
-                                <h3 class=""><i class="bi bi-leaf-fill"></i> ${noticias[i].titulo}</h3>
+                <div class="border border-success row bg-amarelo py-5 my-3 rounded">
+                    <div class="border border-success col-lg-10">
+                        <div class="border border-success m-2">
+                            <div class="border border-success d-flex align-items-center justify-content-between px-3 border-bottom">
+                                <h5 class="border border-success sm-text-center">${noticias[i].dataPublicacao}</h5>
+                                <h3 class="border border-success "><i class="border border-success bi bi-leaf-fill"></i> ${noticias[i].titulo}</h3>
                             </div>
                             <p>${noticias[i].resumo}</p>
-                            <div class="text-start"><h4>- ${noticias[i].autor}</h4></div>
+                            <div class="border border-success text-start"><h4>- ${noticias[i].autor}</h4></div>
                         </div>
                     </div>
-                    <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
+                    <figure class="border border-success col-lg-2 text-center">
+                        <img src="${noticias[i].imagem}" class="img-servico border border-success m-2" alt="">
+                    </figure>
                 </div>`
         }
     }
