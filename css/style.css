@@ -14,19 +14,9 @@
 /* INDEX */
 
 /* NAVBAR */
-.btn-roxo{
-    background-color: #7c00fe;
-    color: #ededed;
-}
-
-.btn-roxo:hover{
-    background-color: #f9e400;
-    color: #161616;
-    border: 1px solid #7c00fe;
-}
 
 .navbar{
-    background-color: #ededed;
+    background-color: #ffaf00;
 }
 
 .navbar li{
@@ -72,6 +62,11 @@
     display: flex;
     align-items: center;
 }
+
+.footer-icons{
+    text-decoration: none;
+    color: #161616;
+}
 /* FIM FOOTER */
 
 /* FIM INDEX */
@@ -91,8 +86,9 @@ footer{
 
 .btn{background-color: #7c00fe;
 color: #ededed  ;}
-.btn:hover{background-color: #f9e400;
-color:var(--cor-preta);}
+.btn:hover{background-color: #ffaf00;
+color:var(--cor-preta);
+border: 1px solid #7c00fe;}
 .bg-laranja{
   background-color: var(--cor-laranja);
 }

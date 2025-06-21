@@ -23,13 +23,13 @@ function header (){
         
         <div class = "flex-grow-1 h-200">
        <div class="card text-center">
-  <div class = "card-yellow">
+  <div class = "card-yellow rounded">
     ${eventos[5].local}
   </div>
-  <div class="card-body card-orange">
+  <div class="card-body card-orange rounded">
     <h5 class="card-title">${catalogoFilmesSeries[8].titulo}</h5>
     <p class="card-text">${catalogoFilmesSeries[8].sinopse}</p>
-    <a href="pages/contrato.html" class="btn btn-roxo">Contratar nossos serviços</a>
+    <a href="pages/contrato.html" class="btn">Contratar nossos serviços</a>
   </div>
   <div class="card-footer card-yellow"">
     ${catalogoFilmesSeries[8].anoLancamento}
@@ -76,9 +76,9 @@ function footer (){
   </div>
 
   <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
-  <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
-  <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
-  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Facebook</div>
+  <div class = "logo logo-instagram rounded mx-1"><a href="" class = "footer-icons"><i class="bi bi-instagram"></i>@EcoCleanOFC</a></div>
+  <div class = "logo logo-whatsapp rounded mx-1"><a href="" class = "footer-icons"><i class="bi bi-whatsapp"></i>(12)9812-57689</a></div>
+  <div class = "logo logo-facebook rounded mx-1"><a href="" class = "footer-icons"><i class="bi bi-facebook"></i>EcoCleanLTDA</a></div>
   </div>
 
   <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua centro">

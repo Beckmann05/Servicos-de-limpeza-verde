@@ -8,12 +8,12 @@ function sect1_servicos(){
     for(let i=0; i<5;i++){
         if(i%2==0){
             main_servicos.innerHTML+=`
-                <div class="bg-roxo text-white row py-5">
+                <div class="bg-roxo text-white row py-5 my-3 rounded">
                     <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
-                    <div class="col-lg-10 row">
+                    <div class="col-lg-10">
                         <div class="m-2">
                             <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
-                                <h3 class="">${noticias[i].titulo}</h3>
+                                <h3 class="">${noticias[i].titulo} <i class="bi bi-bucket"></i></h3>
                                 <h5 class="">${noticias[i].dataPublicacao}</h5>
                             </div>
                             <p>${noticias[i].resumo}</p>
@@ -24,12 +24,12 @@ function sect1_servicos(){
         }
         else{
             main_servicos.innerHTML+=`
-                <div class="row bg-amarelo py-5">
-                    <div class="col-lg-10 row">
+                <div class="row bg-amarelo py-5 my-3 rounded">
+                    <div class="col-lg-10">
                         <div class="m-2">
                             <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
                                 <h5 class="sm-text-center">${noticias[i].dataPublicacao}</h5>
-                                <h3 class="">${noticias[i].titulo}</h3>
+                                <h3 class=""><i class="bi bi-leaf-fill"></i> ${noticias[i].titulo}</h3>
                             </div>
                             <p>${noticias[i].resumo}</p>
                             <div class="text-start"><h4>- ${noticias[i].autor}</h4></div>
@@ -63,9 +63,9 @@ function footer (){
   </div>
 
   <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
-  <div class = "logo logo-instagram"><i class="bi bi-instagram"></i> Instagram</div>
-  <div class = "logo logo-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</div>
-  <div class = "logo logo-facebook"><i class="bi bi-facebook"></i> Facebook</div>
+  <div class = "logo logo-instagram rounded mx-1"><a href="" class = "footer-icons"><i class="bi bi-instagram"></i>@EcoCleanOFC</a></div>
+  <div class = "logo logo-whatsapp rounded mx-1"><a href="" class = "footer-icons"><i class="bi bi-whatsapp"></i>(12)9812-57689</a></div>
+  <div class = "logo logo-facebook rounded mx-1 "><a href="" class = "footer-icons"><i class="bi bi-facebook"></i>EcoCleanLTDA</a></div>
   </div>
 
   <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua centro">
