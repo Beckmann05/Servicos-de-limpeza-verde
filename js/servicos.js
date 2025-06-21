@@ -35,7 +35,7 @@ function sect1_servicos(){
                             <div class="text-start"><h4>- ${noticias[i].autor}</h4></div>
                         </div>
                     </div>
-                    <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
+                    <figure class="col-lg-2 text-center" style = "margin-left: -10px;"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
                 </div>`
         }
     }
