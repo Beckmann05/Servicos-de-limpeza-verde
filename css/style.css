@@ -96,4 +96,20 @@ color:var(--cor-preta);}
 .bg-laranja{
   background-color: var(--cor-laranja);
 }
+.bg-vermelho{
+    background-color: var(--cor-vermelho);
+}
+.bg-amarelo{
+    background-color: var(--cor-amarela);
+}
 /* >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b */
+
+/* SERVIÇOS */
+
+.img-servico{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* FIM SERVIÇOS */
