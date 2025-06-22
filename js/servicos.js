@@ -35,11 +35,8 @@ function sect1_servicos(){
                             <div class="text-start"><h4>- ${noticias[i].autor}</h4></div>
                         </div>
                     </div>
-// <<<<<<< HEAD
-                    <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
-// =======
                     <figure class="col-lg-2 text-center" style = "margin-left: -27px;"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
-// >>>>>>> 54bb7043036c96488835b8d8270d5d6b58324dcd
+
                 </div>`
         }
     }
