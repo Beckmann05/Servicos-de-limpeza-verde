@@ -1,61 +1,68 @@
-function sect1_galeria(){
-    let sect1 = document.getElementById('galeria_1')
-    for(let i=0; i<9; i++){
-        if(i%2==0){
-            sect1.innerHTML+=`
-                <div class="row col-md-6">
-                    <figure class="col-md-2 h-100 p-3" style="height: fit-content;"><img src="${galeriaFotos[i].imagem}" alt="" class="w-100 h-100"></figure>
-                    <div class="col-md-10 p-3">
-                        <h3 class='border-bottom border-dark p-2'>${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}</h3>
-                        <p class=''>${galeriaFotos[i].descricao}</p>
-                        <div class='row'>
-                            <p class='col-md-6 mt-4'>- ${galeriaFotos[i].localizacao} </p>
-                            <p class='col-md-6 mt-4 text-end'> ${galeriaFotos[i].data} </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-md-6 p-3">
-                    <figure class=" col-md-6">
-                        <img src="${galeriaFotos[i+1].imagem}" alt="" class="w-100">
-                    </figure>
-                    <figure class=" col-md-6">
-                        <img src="${galeriaFotos[i+2].imagem}" alt="" class="w-100">
-                    </figure>
-                </div>
-            `
-            i=i+2
-        }
-        else{
-            sect1.innerHTML+=`
-                <div class="row col-md-6 p-3">
-                    <figure class=" col-md-6">
-                        <img src="https://picsum.photos/800/600" alt="" class="w-100">
-                    </figure>
-                    <figure class=" col-md-6">
-                        <img src="https://picsum.photos/800/600" alt="" class="w-100">
-                    </figure>
-                </div>
-                <div class="row col-md-6">
-                    <div class="col-md-10 p-3">
-                        <h3 class='border-bottom border-dark p-2'>${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}</h3>
-                        <p class=''>${galeriaFotos[i].descricao}</p>
-                        <div class='row'>
-                            <p class='col-md-6 mt-4'>- ${galeriaFotos[i].localizacao} </p>
-                            <p class='col-md-6 mt-4 text-end'> ${galeriaFotos[i].data} </p>
-                        </div>
-                    </div>
-                    <figure class="col-md-2 h-100 p-3" style="height: fit-content;"><img src="${galeriaFotos[i].imagem}" alt="" class="w-100 h-100"></figure>
-                </div>
-                `
-            i=i+2
-        }
-    }
+//SECTION-1
+let sec1 = document.getElementById('enderecos-sec-1');
+function printSec1Endereco(){
+  sec1.innerHTML = `
+  <h2>Nossa Matriz</h2>
+      <div class="row">
+      <div class=" col-12">
+       <div class="row rounded fundo-mapa">
+         <iframe class=" rounded w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41587.750070714814!2d-48.46493452580242!3d-22.881167457851213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7260edd4e582b%3A0x798fe74168f8d19b!2sBotucatu%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1750629263482!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      </div>
+      <h2 class="mt-5">Nossas filiais</h2>
+      <div class="col-12">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        ${galeriaFotos[2].localizacao}
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        ${artigos[10].paragrafo01} 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        ${galeriaFotos[1].localizacao}
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+         ${artigos[9].paragrafo02} 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        ${galeriaFotos[0].localizacao}
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        ${artigos[9].paragrafo01} 
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  `
 }
 
-sect1_galeria()
+printSec1Endereco();
+//SECTION-1 FIM
+
+
+
+
 
 //MODAL
-let modal = document.getElementById('modalGaleria');
+let modal = document.getElementById('modalEnderecos');
 
 function printModal(){
   modal.innerHTML = `
@@ -155,9 +162,8 @@ function printModal(){
 printModal()
 //FIM MODAL
 
-
 //OFFCANVAS
-let offcanvas = document.getElementById('offcanvasGaleria');
+let offcanvas = document.getElementById('offcanvasEnderecos');
 function printOffcanvas(){
   offcanvas.innerHTML = `
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -191,6 +197,8 @@ function printOffcanvas(){
 }
 
 printOffcanvas();
+
+console.log('teste');
 //FIM OFF CANVAS
 
 
@@ -220,4 +228,4 @@ function footer (){
   `
 }
 footer();
-// >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b
+// FIM FOOTER
