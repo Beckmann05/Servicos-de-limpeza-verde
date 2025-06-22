@@ -14,6 +14,15 @@
 /* INDEX */
 
 /* NAVBAR */
+.dropdown-menu{
+    background-color: #ffaf00;
+}
+
+.dropdown-item:hover{
+    border-radius: 10px;
+    background-color: #7c00fe;
+    color: #ededed;
+}
 
 .navbar{
     background-color: #ffaf00;
@@ -45,9 +54,7 @@
 /* FIM HEADER */
 
 /* MAIN */
-main{
-    min-height: 79.1vh;;
-}
+
 
 .card-body{
     background-color: #f9e400;
@@ -79,6 +86,17 @@ main{
 }
 /* FIM FOOTER */
 
+
+/* OFFCANVAS */
+.offcanvas{
+    background-color: #ffaf00;
+}
+
+.nav-link-offcanvas{
+    font-size: larger;
+}
+/* FIM OFFCANVAS */
+
 /* FIM INDEX */
 
 
@@ -93,10 +111,10 @@ footer{
   padding: 20px;
   font-size: 20px;
 }
-
-.btn{background-color: #7c00fe;
+/*Lucas*/
+.btn-roxo{background-color: #7c00fe;
 color: #ededed  ;}
-.btn:hover{background-color: #ffaf00;
+.btn-roxo:hover{background-color: #ffaf00;
 color:var(--cor-preta);
 border: 1px solid #7c00fe;}
 .bg-laranja{
@@ -120,6 +138,7 @@ border: 1px solid #7c00fe;}
 
 /* FIM SERVIÇOS */
 
+
 /* PRODUTOS */
 
 
@@ -142,3 +161,27 @@ border: 1px solid #7c00fe;}
 .main-produtos{
     background-color: #f5004f;
 }
+
+/* FIM PRODUTOS */
+
+
+/*CONTRATO */
+.main-contrato{
+    min-height: 69vh;
+}
+
+.body-contrato{
+    background-image: url(../img/commercial-cleaners-cleaning-office-floors-1024x683.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-contrato-gradiente{
+    background-color: #f5004e80;
+    min-height: 88.1vh;
+}
+/* FIM CONTRATO */
+
+/* SAC */
+/* FIM SAC */

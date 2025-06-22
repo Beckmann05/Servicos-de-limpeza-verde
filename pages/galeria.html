@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a href="../index.html"><img src="../img/jimeng-2025-06-19-1001-do_me_a_logo_for_a_ecological_cleaning_company._it_must_be_professional_and_e...-removebg-preview (2).png" width="70" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,8 +36,12 @@
           <a href="../pages/SAC.html" class="nav-link" aria-disabled="true">Contato</a>
         </li>
       </ul>
-        <button class="btn button-color" type="button">Cadastrar-se</button>
-        <button class="btn button-color ms-3" type="button">Log-in</button>
+        <form class="d-flex" role="search">
+              <button class="btn btn-roxo" type="button"
+              data-bs-toggle="modal" data-bs-target="#exampleModalNew">Cadastre-se</button>
+               <button class="btn btn-roxo ms-3" type="button"
+              data-bs-toggle="modal" data-bs-target="#exampleModalLogin">Log-in</button>
+            </form>
     </div>
   </div>
 </nav>
@@ -47,6 +51,18 @@
         <div class="row bg-light form border border-radius" id="galeria_1">
         </div>
     </main>
+
+    <!-- MODAL HTML -->
+ <div id="modalGaleria">
+</div>
+  
+<!-- FIM MODAL HTML -->
+
+<!-- OFFCANVAS -->
+ <div id="offcanvasGaleria">
+
+ </div>
+ <!-- FIM OFFCANVAS -->
 
 
     <footer id="footer" class="bg-laranja">
