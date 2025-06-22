@@ -45,6 +45,10 @@
 /* FIM HEADER */
 
 /* MAIN */
+main{
+    min-height: 79.1vh;;
+}
+
 .card-body{
     background-color: #f9e400;
 }
@@ -115,3 +119,26 @@ border: 1px solid #7c00fe;}
 }
 
 /* FIM SERVIÇOS */
+
+/* PRODUTOS */
+
+
+.card-produtos {
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.card-produtos:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.praticas-ecologicas{
+    background-color: #f9e400;
+}
+
+.main-produtos{
+    background-color: #f5004f;
+}

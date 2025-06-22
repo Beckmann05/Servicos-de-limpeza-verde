@@ -21,7 +21,7 @@ function header (){
         <img src = "${galeriaFotos[i].imagem}" id = "imagemHeader" class = "img-fluid rounded">
         </div>
         
-        <div class = "flex-grow-1 h-200 bg-roxo">
+        <div class = "flex-grow-1 h-200">
        <div class="card text-center bg-roxo">
   <div class = "card-yellow rounded">
     ${eventos[5].local}
