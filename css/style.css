@@ -144,6 +144,22 @@ border: 1px solid #7c00fe;}
 
 /* FIM SERVIÇOS */
 
+/* GALERIA */
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap:20px
+
+}
+
+.banner{
+    height: 200px;
+}
+
+/* FIM GALERIA */
+
 
 /* PRODUTOS */
 

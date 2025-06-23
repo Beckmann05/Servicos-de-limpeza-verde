@@ -21,7 +21,7 @@ let lista_form_contrato= [
     {
         label:'Tipo de serviço:',
         col: 6,
-        for:'serviço',
+        for:'servico',
         type:'select',
     },
     {
@@ -33,7 +33,7 @@ let lista_form_contrato= [
     {
         label:'Endereço:',
         col: 6,
-        for:'endereço',
+        for:'endereco',
         type:'Text',
     },
     {
@@ -65,13 +65,13 @@ function form_contrato(){
             <div class="col-lg-${lista_form_contrato[i].col} col-sm-12 py-2 px-5">
                 <label for="${lista_form_contrato[i].for}" class="" style="font-size: larger;">${lista_form_contrato[i].label}</label>
                 <br>
-                <select name="" id="" class="form-control">
+                <select name="" id="${lista_form_contrato[i].for}" class="form-control">
                     <option value=""></option>
-                    <option value="">Limpeza Domiciliar</option>
-                    <option value="">Limpeza Pós-obra</option>
-                    <option value="">Limpeza Corporativa</option>
-                    <option value="">Sanitização</option>
-                    <option value="">Zeladoria</option>
+                    <option value="1">Limpeza Domiciliar</option>
+                    <option value="2">Limpeza Pós-obra</option>
+                    <option value="3">Limpeza Corporativa</option>
+                    <option value="4">Sanitização</option>
+                    <option value="5">Zeladoria</option>
                 </select>`
         }
         else{
@@ -79,12 +79,12 @@ function form_contrato(){
             <div class="col-lg-${lista_form_contrato[i].col} col-sm-${2*lista_form_contrato[i].col} py-2 px-5">
                 <label for="${lista_form_contrato[i].for}" class="" style="font-size: larger;">${lista_form_contrato[i].label}</label>
                 <br>
-                <input type=" ${lista_form_contrato[i].type}" class="form-control">`
+                <input type=" ${lista_form_contrato[i].type}" id="${lista_form_contrato[i].for}" class="form-control">`
         }
     }
         div_form_contrato.innerHTML += `
             <div class="text-center p-3">
-            <button class="btn btn-roxo col-2">Enviar</button>            
+            <button class="btn btn-roxo col-2" id="btn-contrato">Enviar</button>            
             </div>`
 }
 
@@ -260,3 +260,32 @@ function footer (){
 }
 footer();
 // >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b
+
+function alerts(){
+  let estado = 'certo'
+  let id = ''
+  for( let i = 0; i<lista_form_contrato.length; i++){
+      id= lista_form_contrato[i].for
+    if(document.getElementById(id).value == ""){
+      estado = ''
+    }
+  }
+  if(estado == 'certo'){
+    alert('Enviado com sucesso, entraremos em contato em breve')
+  }
+  else{
+    alert('Por favor, preencha todos os campos')
+  }
+  limpar()
+}
+function limpar(){
+  let id = ''
+  for( let i = 0; i<lista_form_contrato.length; i++){
+      id= lista_form_contrato[i].for
+      document.getElementById(id).value = ""}
+}
+
+
+
+
+document.getElementById('btn-contrato').addEventListener('click', alerts)
