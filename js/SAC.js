@@ -89,7 +89,7 @@ function printDepoimento(){
       <div>
       <img class="rounded-circle imagem-card-sac" src=${poemas[i].imagem} alt="">
     </div>
-    <span class="d-flex ms-5 align-items-center justify-content-center">${poemas[i].autor}</span>
+    <span class="d-flex ms-3 align-items-center justify-content-center">${poemas[i].autor}</span>
   </div>
   </div>
 </div>
