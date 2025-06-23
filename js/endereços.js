@@ -15,31 +15,31 @@ function printSec1Endereco(){
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        ${galeriaFotos[2].localizacao}
+        <i class="bi bi-geo-alt-fill"></i>${galeriaFotos[2].localizacao}
       </button>
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
       <div class="accordion-body">
-        ${artigos[10].paragrafo01} 
+        ${artigos[10].paragrafo01}
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        ${galeriaFotos[1].localizacao}
+       <i class="bi bi-geo-alt-fill"></i>${galeriaFotos[1].localizacao}
       </button>
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
       <div class="accordion-body">
-         ${artigos[9].paragrafo02} 
+         ${artigos[9].paragrafo02}
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        ${galeriaFotos[0].localizacao}
+        <i class="bi bi-geo-alt-fill"></i>${galeriaFotos[0].localizacao}
       </button>
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
@@ -175,6 +175,9 @@ function printOffcanvas(){
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link nav-link-offcanvas" href="../pages/produtos.html">Produtos Usados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
         </li>
         <li class="nav-item">
           <a href="../pages/SAC.html" class="nav-link nav-link-offcanvas" aria-disabled="true">Contato</a>

@@ -171,6 +171,9 @@ function printOffcanvas(){
           <a class="nav-link nav-link-offcanvas" href="../pages/produtos.html">Produtos Usados</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
+        </li>
+        <li class="nav-item">
           <a href="../pages/SAC.html" class="nav-link nav-link-offcanvas" aria-disabled="true">Contato</a>
         </li>
         <li class="nav-item dropdown">

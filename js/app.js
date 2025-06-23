@@ -166,7 +166,42 @@ printModal()
 //FIM MODAL
 
 //OFFCANVAS
-
+let offcanvas = document.getElementById('offcanvasIndex')
+function printOffcanvas(){
+  offcanvas.innerHTML = `
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Nosso Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link nav-link-offcanvas" href="pages/produtos.html">Produtos Usados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/SAC.html" class="nav-link nav-link-offcanvas" aria-disabled="true">Contato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link-offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item nav-link-offcanvas" href="pages/servicos.html">Nossos serviços</a></li>
+            <li><a class="dropdown-item nav-link-offcanvas" href="pages/galeria.html">Nossos resultados</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item nav-link-offcanvas" href="pages/contrato.html">Contrate-nos</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+</div>
+  `
+}
+printOffcanvas();
 //FIM OFFCANVAS
 
 // FOOTER

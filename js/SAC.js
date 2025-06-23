@@ -73,6 +73,34 @@ function form_contrato(){
 
 form_contrato()
 
+// CARD-DEPOIMENTO
+let cardDepoimento = document.getElementById('cardDepoimento')
+function printDepoimento(){
+  cardDepoimento.innerHTML = ""
+  for(let i = 0; i < 4; i++){
+    cardDepoimento.innerHTML += `
+    <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="mb-5 card card-depoimento">
+              <div class="display-6 card-title-depoimento rounded"><i class="bi bi-chat-quote"></i></div>
+  <div class="card-body card-body-depoimento rounded">
+    <h5 class="card-title">${poemas[i].titulo}</h5>
+    <p class="card-text">${poemas[i+6].texto}</p>
+    <div class="d-flex mt-5">
+      <div>
+      <img class="rounded-circle imagem-card-sac" src=${poemas[i].imagem} alt="">
+    </div>
+    <span class="d-flex ms-5 align-items-center justify-content-center">${poemas[i].autor}</span>
+  </div>
+  </div>
+</div>
+          </div>
+    `
+  }
+}
+
+printDepoimento();
+// FIM CARD-DEPOIMENTO
+
 
 //MODAL
 let modal = document.getElementById('modalSac');
@@ -188,6 +216,9 @@ function printOffcanvas(){
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link nav-link-offcanvas" href="../pages/produtos.html">Produtos Usados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
         </li>
         <li class="nav-item">
           <a href="../pages/SAC.html" class="nav-link nav-link-offcanvas" aria-disabled="true">Contato</a>

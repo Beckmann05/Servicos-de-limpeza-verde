@@ -190,12 +190,36 @@ border: 1px solid #7c00fe;}
 /* FIM CONTRATO */
 
 /* SAC */
+.imagem-card-sac{
+    width: 90px;
+}
+
 .section-sac{
     min-height: 69.1vh;
 }
 
 .body-sac{
-    background-color: #f5004f;
+    background-image: url(../img/thames-water-jobs-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-sac-gradiente{
+    background-color: #f5004e76;
+}
+
+.card-depoimento{
+    border: 1px #7c00fe;
+    background-color: #f9e400;
+}
+
+.card-body-depoimento{
+    min-height: 25.5vh;
+}
+
+.card-title-depoimento{
+    background-color: #7c00fe;
 }
 /* FIM SAC */
 
