@@ -115,7 +115,7 @@
 
 footer{
   padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 /*Lucas*/
 .btn-roxo{background-color: #7c00fe;
@@ -145,6 +145,9 @@ border: 1px solid #7c00fe;}
 /* FIM SERVIÇOS */
 
 /* GALERIA */
+.body-galeria{
+    background-color: #f5004f;
+}
 
 .grid-1{
     display: grid;
