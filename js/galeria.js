@@ -3,53 +3,131 @@ function sect1_galeria(){
     for(let i=0; i<9; i++){
         if(i%2==0){
             sect1.innerHTML+=`
-                <div class="row col-md-6">
-                    <figure class="col-md-2 h-100 p-3" style="height: fit-content;"><img src="${galeriaFotos[i].imagem}" alt="" class="w-100 h-100"></figure>
-                    <div class="col-md-10 p-3">
-                        <h3 class='border-bottom border-dark p-2'>${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}</h3>
-                        <p class=''>${galeriaFotos[i].descricao}</p>
-                        <div class='row'>
-                            <p class='col-md-6 mt-4'>- ${galeriaFotos[i].localizacao} </p>
-                            <p class='col-md-6 mt-4 text-end'> ${galeriaFotos[i].data} </p>
-                        </div>
+              <div class="grid-1">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-2 py-2">
+                    <img src="${galeriaFotos[i].imagem}" class="w-100 h-100" alt="">
+                  </div>
+                  <div class="col-sm-12 col-lg-10 p-2">
+                    <h3 class="border-bottom ps-2 border-dark">
+                      ${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}
+                    </h3>
+                    <p class="px-2">
+                      ${galeriaFotos[i].descricao}
+                    </p>
+                    <div class="row my-auto">
+                      <div class="col-6 text-center">- ${galeriaFotos[i].localizacao}</div>
+                      <div class="col-6 text-center">${galeriaFotos[i].data}</div>
                     </div>
+                  </div>
                 </div>
-                <div class="row col-md-6 p-3">
-                    <figure class=" col-md-6">
-                        <img src="${galeriaFotos[i+1].imagem}" alt="" class="w-100">
-                    </figure>
-                    <figure class=" col-md-6">
-                        <img src="${galeriaFotos[i+2].imagem}" alt="" class="w-100">
-                    </figure>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[i+1].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[i+2].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
                 </div>
+              </div>
             `
             i=i+2
         }
         else{
             sect1.innerHTML+=`
-                <div class="row col-md-6 p-3">
-                    <figure class=" col-md-6">
-                        <img src="https://picsum.photos/800/600" alt="" class="w-100">
-                    </figure>
-                    <figure class=" col-md-6">
-                        <img src="https://picsum.photos/800/600" alt="" class="w-100">
-                    </figure>
+              <div class="grid-1">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[i+1].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[i+2].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
                 </div>
-                <div class="row col-md-6">
-                    <div class="col-md-10 p-3">
-                        <h3 class='border-bottom border-dark p-2'>${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}</h3>
-                        <p class=''>${galeriaFotos[i].descricao}</p>
-                        <div class='row'>
-                            <p class='col-md-6 mt-4'>- ${galeriaFotos[i].localizacao} </p>
-                            <p class='col-md-6 mt-4 text-end'> ${galeriaFotos[i].data} </p>
-                        </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-10 p-2">
+                    <h3 class="border-bottom ps-2 border-dark">
+                      ${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}
+                    </h3>
+                    <p class="px-2">
+                      ${galeriaFotos[i].descricao}
+                    </p>
+                    <div class="row my-auto">
+                      <div class="col-6 text-center">- ${galeriaFotos[i].localizacao}</div>
+                      <div class="col-6 text-center">${galeriaFotos[i].data}</div>
                     </div>
-                    <figure class="col-md-2 h-100 p-3" style="height: fit-content;"><img src="${galeriaFotos[i].imagem}" alt="" class="w-100 h-100"></figure>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 py-2">
+                    <img src="${galeriaFotos[i].imagem}" class="w-100 h-100" alt="">
+                  </div>
                 </div>
+              </div>
                 `
             i=i+2
         }
     }
+    sect1.innerHTML += `
+          <div class="banner">
+            <img src="${galeriaFotos[9].imagem}" class="w-100 h-100" alt="">
+          </div>
+              <div class="grid-1">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-2 py-2">
+                    <img src="${galeriaFotos[10].imagem}" class="w-100 h-100" alt="">
+                  </div>
+                  <div class="col-sm-12 col-lg-10 p-2">
+                    <h3 class="border-bottom ps-2 border-dark">
+                      ${galeriaFotos[10].id} - ${galeriaFotos[10].titulo}
+                    </h3>
+                    <p class="px-2">
+                      ${galeriaFotos[10].descricao}
+                    </p>
+                    <div class="row my-auto">
+                      <div class="col-6 text-center">- ${galeriaFotos[10].localizacao}</div>
+                      <div class="col-6 text-center">${galeriaFotos[10].data}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[11].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[12].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="grid-1">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[13+1].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <img src="${galeriaFotos[13+2].imagem}" class="w-100 py-2 h-100" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-10 p-2">
+                    <h3 class="border-bottom ps-2 border-dark">
+                      ${galeriaFotos[13].id} - ${galeriaFotos[13].titulo}
+                    </h3>
+                    <p class="px-2">
+                      ${galeriaFotos[13].descricao}
+                    </p>
+                    <div class="row my-auto">
+                      <div class="col-6 text-center">- ${galeriaFotos[13].localizacao}</div>
+                      <div class="col-6 text-center">${galeriaFotos[13].data}</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-2 py-2">
+                    <img src="${galeriaFotos[13].imagem}" class="w-100 h-100" alt="">
+                  </div>
+                </div>
+              </div>
+          <div class="banner">
+            <img src="${galeriaFotos[16].imagem}" class="w-100 h-100" alt="">
+          </div>
+    `
 }
 
 sect1_galeria()
