@@ -68,7 +68,7 @@ function sec2(){
             <img src="${eventos[0].imagem}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${eventos[3].local}</h5>
-              <button class="btn btn-roxo" data-bs-target = "#card-1" data-bs-toggle="collapse" >Ver mais</button>
+              <button class="btn btn-roxo" data-bs-target = "#card-1" data-bs-toggle="collapse">Ver mais</button>
               <div class="collapse mt-2" id="card-1">
                 <p class="card-text">${poemas[5].texto}</p>
               </div>
@@ -81,7 +81,7 @@ function sec2(){
             <img src=${eventos[1].imagem} class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${eventos[3].local}</h5>
-              <button class="btn btn-roxo" data-bs-target = "#card-2" data-bs-toggle="collapse" >Ver mais</button>
+              <button class="btn btn-roxo" data-bs-target = "#card-2" data-bs-toggle="collapse">Ver mais</button>
               <div class="collapse mt-2" id="card-2">
                 <p class="card-text">${poemas[6].texto}</p>
               </div>
@@ -94,7 +94,7 @@ function sec2(){
             <img src=${eventos[2].imagem} class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${eventos[14].local}</h5>
-              <button class="btn btn-roxo" data-bs-target = "#card-3" data-bs-toggle="collapse" >Ver mais</button>
+              <button class="btn btn-roxo" data-bs-target = "#card-3" data-bs-toggle="collapse">Ver mais</button>
               <div class="collapse mt-2" id="card-3">
                 <p class="card-text">${poemas[7].texto}</p>
               </div>
@@ -107,7 +107,7 @@ function sec2(){
             <img src=${eventos[3].imagem} class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${eventos[3].local}</h5>
-              <button class="btn btn-roxo" data-bs-target = "#card-4" data-bs-toggle="collapse" >Ver mais</button>
+              <button class="btn btn-roxo" data-bs-target = "#card-4" data-bs-toggle="collapse">Ver mais</button>
               <div class="collapse mt-2" id="card-4">
                 <p class="card-text">${poemas[8].texto}</p>
               </div>
