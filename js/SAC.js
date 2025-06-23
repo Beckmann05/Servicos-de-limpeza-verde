@@ -283,11 +283,11 @@ function alerts(){
     }}
   if(estado == 'certo'){
     alert('Enviado com sucesso, entraremos em contato em breve')
+    limpar()
   }
   else{
     alert('Por favor, preencha todos os campos')
   }
-  limpar()
 }
 function limpar(){
   let id = ''
