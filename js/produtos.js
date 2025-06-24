@@ -22,21 +22,12 @@ function sec1(){
   <div class="carousel-inner rounded">
     <div class="carousel-item active">
       <img src="../img/1728322132produtos-de-limpeza-profissional-copapel.png" style="max-height: 200px; object-fit: cover;" class="d-block w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
     </div>
     <div class="carousel-item">
       <img src="../img/4a1d1b_c9ca6f4bfcb7477a9322b3ed0de2552c~mv2.jpg" style="max-height: 200px; object-fit: cover;" class="w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
     </div>
     <div class="carousel-item">
       <img src="../img/Conheca-o-servico-de-Limpeza-Sustentavel-e-conte-com-o-diferencial-da-Terserv.jpg" style="max-height: 200px; object-fit: cover;" class="w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
