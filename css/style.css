@@ -156,6 +156,13 @@ border: 1px solid #7c00fe;}
     gap:20px
 
 }
+.w-90{
+    width: 90%;
+}
+.section-galeria{
+    background-color: #f9e400;
+    border-radius: 10px;
+}
 
 .banner{
     height: 200px;

@@ -1,14 +1,21 @@
 function sect1_galeria(){
     let sect1 = document.getElementById('galeria_1')
+    
+      sect1.innerHTML +=`
+      <h2 class=" border-bottom border-dark text-center mb-3">
+        Nossos Destaques
+      </h2>`
     for(let i=0; i<9; i++){
         if(i%2==0){
             sect1.innerHTML+=`
               <div class="grid-1">
                 <div class="row">
-                  <div class="col-sm-12 col-lg-2 py-2">
-                    <img src="${galeriaFotos[i].imagem}" class="w-100 h-100" alt="">
+                  <div class="col-sm-12 col-lg-4 mb-3">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-10 p-2">
+                  <div class="col-sm-12 col-lg-8 p-2">
                     <h3 class="border-bottom ps-2 border-dark">
                       ${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}
                     </h3>
@@ -22,11 +29,15 @@ function sect1_galeria(){
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[i+1].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i+1].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[i+2].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i+2].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -37,15 +48,19 @@ function sect1_galeria(){
             sect1.innerHTML+=`
               <div class="grid-1">
                 <div class="row">
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[i+1].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i+1].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[i+2].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i+2].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12 col-lg-10 p-2">
+                  <div class="col-sm-12 col-lg-8 p-2">
                     <h3 class="border-bottom ps-2 border-dark">
                       ${galeriaFotos[i].id} - ${galeriaFotos[i].titulo}
                     </h3>
@@ -57,8 +72,10 @@ function sect1_galeria(){
                       <div class="col-6 text-center">${galeriaFotos[i].data}</div>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-lg-2 py-2">
-                    <img src="${galeriaFotos[i].imagem}" class="w-100 h-100" alt="">
+                  <div class="col-sm-12 col-lg-4 mb-3">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[i].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -68,14 +85,18 @@ function sect1_galeria(){
     }
     sect1.innerHTML += `
           <div class="banner">
-            <img src="${galeriaFotos[9].imagem}" class="w-100 h-100" alt="">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[9].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
           </div>
               <div class="grid-1">
                 <div class="row">
-                  <div class="col-sm-12 col-lg-2 py-2">
-                    <img src="${galeriaFotos[10].imagem}" class="w-100 h-100" alt="">
+                  <div class="col-sm-12 col-lg-4 mb-3">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[10].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-10 p-2">
+                  <div class="col-sm-12 col-lg-8 p-2">
                     <h3 class="border-bottom ps-2 border-dark">
                       ${galeriaFotos[10].id} - ${galeriaFotos[10].titulo}
                     </h3>
@@ -89,25 +110,33 @@ function sect1_galeria(){
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[11].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[11].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[12].imagem}" class="w-100 py-2 h-100" alt="">
+                  <div class="col-lg-6 col-sm-12 my-2">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[12].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="grid-1">
                 <div class="row">
                   <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[13+1].imagem}" class="w-100 py-2 h-100" alt="">
+                    <div class="rounded bg-roxo p-2 m-2">
+                      <img src="${galeriaFotos[14].imagem}" class="w-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                   <div class="col-lg-6 col-sm-12">
-                    <img src="${galeriaFotos[13+2].imagem}" class="w-100 py-2 h-100" alt="">
+                    <div class="rounded bg-roxo p-2 m-2">
+                      <img src="${galeriaFotos[15].imagem}" class="w-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12 col-lg-10 p-2">
+                  <div class="col-sm-12 col-lg-8 p-2">
                     <h3 class="border-bottom ps-2 border-dark">
                       ${galeriaFotos[13].id} - ${galeriaFotos[13].titulo}
                     </h3>
@@ -119,13 +148,17 @@ function sect1_galeria(){
                       <div class="col-6 text-center">${galeriaFotos[13].data}</div>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-lg-2 py-2">
-                    <img src="${galeriaFotos[13].imagem}" class="w-100 h-100" alt="">
+                  <div class="col-sm-12 col-lg-4 mb-3">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[13].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
           <div class="banner">
-            <img src="${galeriaFotos[16].imagem}" class="w-100 h-100" alt="">
+                    <div class="rounded bg-roxo h-100 p-2 m-2">
+                      <img src="${galeriaFotos[16].imagem}" class="w-100 h-100 rounded bg-roxo" alt="">
+                    </div>
           </div>
     `
 }
@@ -280,23 +313,31 @@ function footer (){
   let footerContainer = document.getElementById('footer');
   footerContainer.innerHTML = `
   <div class = "container-footer">
-  <div class = "container">
-  <div class = "row">
-  <div class = "col-lg-3 col-md-12 com-sm-12 centro">
-  <div class = "logo logo-telefone"><i class="bi bi-telephone-inbound-fill"></i> (12) 32765-4321</div>
-  </div>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
+          <div class = "logo logo-instagram rounded text-center">
+            <a href="" class = "footer-icons">
+              <i class="bi bi-instagram"></i>@EcoClean
+            </a>
+          </div>
+          <div class = "logo text-center logo-whatsapp rounded">
+            <a href="" class = "footer-icons">
+              <i class="bi bi-whatsapp"></i>9812-5768
+            </a>
+          </div>
+          <div class = "logo text-center logo-facebook rounded">
+            <a href="" class = "footer-icons">
+              <i class="bi bi-facebook"></i>Eco_Clean
+            </a>
+          </div>
+        </div>
 
-  <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
-  <div class = "logo logo-instagram rounded"><a href="" class = "footer-icons"><i class="bi bi-instagram"></i>@EcoCleanOFC</a></div>
-  <div class = "logo logo-whatsapp rounded"><a href="" class = "footer-icons"><i class="bi bi-whatsapp"></i>(12)9812-5768</a></div>
-  <div class = "logo logo-facebook rounded"><a href="" class = "footer-icons"><i class="bi bi-facebook"></i>EcoCleanLTDA</a></div>
-  </div>
-
-  <div class = "col-lg-3 col-md-12 com-sm-12 marca-dagua centro">
-  <p>Todos os direitos reservados &copy;EcoClean LTDA<p>
-  </div>
-  </div>
-  </div>
+        <div class = "text-center col-lg-6 col-md-12 com-sm-12 marca-dagua centro justify-content-center">
+          <p>Todos os direitos reservados <br> &copy;EcoClean LTDA.<p>
+        </div>
+      </div>
+    </div>
   </div>
   `
 }
