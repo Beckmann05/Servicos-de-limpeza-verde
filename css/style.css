@@ -135,7 +135,11 @@ border: 1px solid #7c00fe;}
 /* >>>>>>> 78242aead0b7ab6a09982eaf33e9879e7119150b */
 
 /* SERVIÇOS */
-
+@media (max-width: 990px){
+    .img-servico{
+        margin: -27px;
+    }
+}
 .img-servico{
     height: 180px;
     width: 180px;

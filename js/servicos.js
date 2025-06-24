@@ -9,11 +9,13 @@ function sect1_servicos(){
         if(i%2==0){
             main_servicos.innerHTML+=`
                 <div class="bg-roxo text-white row py-5 my-3 rounded">
-                    <figure class="col-lg-2 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
-                    <div class="col-lg-10">
+                    <div class="col-lg-3 text-center">
+                      <img src="${noticias[i].imagem}" class="img-servico m-2" alt="">
+                    </div>
+                    <div class="col-lg-9">
                         <div class="m-2">
                             <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
-                                <h3 class="">${noticias[i].titulo} <i class="bi bi-bucket"></i></h3>
+                                <h4 class="">${noticias[i].titulo} <i class="bi bi-bucket"></i></h4>
                                 <h5 class="">${noticias[i].dataPublicacao}</h5>
                             </div>
                             <p>${noticias[i].resumo}</p>
@@ -25,17 +27,17 @@ function sect1_servicos(){
         else{
             main_servicos.innerHTML+=`
                 <div class="row bg-amarelo py-5 my-3 rounded">
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <div class="m-2">
                             <div class="d-flex align-items-center justify-content-between px-3 border-bottom">
                                 <h5 class="sm-text-center">${noticias[i].dataPublicacao}</h5>
-                                <h3 class=""><i class="bi bi-leaf-fill"></i> ${noticias[i].titulo}</h3>
+                                <h4 class=""><i class="bi bi-leaf-fill"></i> ${noticias[i].titulo}</h4>
                             </div>
                             <p>${noticias[i].resumo}</p>
                             <div class="text-start"><h4>- ${noticias[i].autor}</h4></div>
                         </div>
                     </div>
-                    <figure class="col-lg-2 text-center" style = "margin-left: -27px;"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
+                    <figure class="col-lg-3 text-center"><img src="${noticias[i].imagem}" class="img-servico m-2" alt=""></figure>
 
                 </div>`
         }
