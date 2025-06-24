@@ -31,6 +31,10 @@
 .navbar li{
     font-weight: 600;
 }
+
+.nav-link-roxo:hover{
+    color: #7c00fe;
+}
 /* FIM NAVBAR */
 
 
@@ -89,6 +93,7 @@
 .footer-icons{
     text-decoration: none;
     color: #161616;
+    font-size: 20px;
 }
 /* FIM FOOTER */
 

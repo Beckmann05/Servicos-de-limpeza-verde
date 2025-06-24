@@ -81,7 +81,7 @@ function printDepoimento(){
     cardDepoimento.innerHTML += `
     <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="mb-5 card card-depoimento">
-              <div class="display-6 card-title-depoimento rounded"><i class="bi bi-chat-quote"></i></div>
+              <div class="display-6 card-title-depoimento rounded"><i class=" ms-2 bi bi-chat-quote"></i></div>
   <div class="card-body card-body-depoimento rounded">
     <h5 class="card-title">${poemas[i].titulo}</h5>
     <p class="card-text">${poemas[i+6].texto}</p>
@@ -215,16 +215,16 @@ function printOffcanvas(){
   <div class="offcanvas-body">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link nav-link-offcanvas" href="../pages/produtos.html">Produtos Usados</a>
+          <a class="nav-link nav-link-roxo nav-link-offcanvas" href="../pages/produtos.html">Produtos Usados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
+          <a class="nav-link nav-link-roxo nav-link-offcanvas" href="../pages/endereços.html">Endereços</a>
         </li>
         <li class="nav-item">
-          <a href="../pages/SAC.html" class="nav-link nav-link-offcanvas" aria-disabled="true">Contato</a>
+          <a href="../pages/SAC.html" class="nav-link nav-link-roxo nav-link-offcanvas" aria-disabled="true">Contato</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-link-offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link nav-link-roxo dropdown-toggle nav-link-offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Serviços
           </a>
           <ul class="dropdown-menu">
@@ -251,27 +251,34 @@ function footer (){
   <div class = "container-footer">
     <div class = "container">
       <div class = "row">
-        <div class = "col-lg-6 col-md-12 com-sm-12 d-flex my-3 centro">
-          <div class = "logo logo-instagram rounded text-center">
+       <div class = "col-lg-3 col-md-6 col-sm-12 my-2">
+          <div class = "logo logo-instagram rounded">
             <a href="" class = "footer-icons">
-              <i class="bi bi-instagram"></i>@EcoClean
+              <i class="bi bi-instagram"></i> @EcoClean
             </a>
           </div>
-          <div class = "logo text-center logo-whatsapp rounded">
-            <a href="" class = "footer-icons">
-              <i class="bi bi-whatsapp"></i>9812-5768
-            </a>
-          </div>
-          <div class = "logo text-center logo-facebook rounded">
-            <a href="" class = "footer-icons">
-              <i class="bi bi-facebook"></i>Eco_Clean
-            </a>
-          </div>
-        </div>
+       </div>
 
-        <div class = "text-center col-lg-6 col-md-12 com-sm-12 marca-dagua centro justify-content-center">
+       <div class = "col-lg-3 col-md-6 col-sm-12 my-2">
+          <div class = "logo logo-whatsapp rounded">
+            <a href="" class = "footer-icons">
+              <i class="bi bi-whatsapp"></i> (12)9812-5768
+            </a>
+          </div>
+       </div>
+
+       <div class = "col-lg-3 col-md-6 col-sm-12 my-2">
+          <div class = "logo logo-facebook rounded">
+            <a href="" class = "footer-icons">
+              <i class="bi bi-facebook"></i> EcoCleanLTDA
+            </a>
+          </div>
+       </div>
+
+       <div class = "col-lg-3 col-md-6 col-sm-12 marca-dagua ">
           <p>Todos os direitos reservados <br> &copy;EcoClean LTDA.<p>
-        </div>
+       </div>
+
       </div>
     </div>
   </div>
