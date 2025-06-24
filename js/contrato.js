@@ -224,6 +224,12 @@ function printOffcanvas(){
           </ul>
         </li>
       </ul>
+      <form class="d-flex" role="search">
+              <button class="btn btn-roxo" type="button"
+              data-bs-toggle="modal" data-bs-target="#exampleModalNew">Cadastre-se</button>
+               <button class="btn btn-roxo ms-3" type="button"
+              data-bs-toggle="modal" data-bs-target="#exampleModalLogin">Log-in</button>
+            </form>
   </div>
 </div>
   `
